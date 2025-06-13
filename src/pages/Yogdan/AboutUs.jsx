@@ -78,7 +78,7 @@ const AboutUs = () => {
             alt="Chairman"
             className="w-32 h-32 object-cover rounded-full mx-auto mb-4 border-4 border-green-600"
           />
-          <h3 className="text-xl font-semibold text-green-700">Mr. Ram Bahadur Thapa</h3>
+          <h3 className="text-xl font-semibold text-green-700">Mr. Gyanendra Maharjan</h3>
           <p className="text-sm text-orange-500 mb-6">Chairman, Yogdan Cooperative</p>
           <blockquote className="italic text-gray-700 max-w-3xl mx-auto">
             “We believe in the strength of cooperation. At Yogdan, our goal is to create a financially empowered society where each member contributes and benefits equally.”

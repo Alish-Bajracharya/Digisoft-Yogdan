@@ -19,7 +19,7 @@ const PlanCard = ({ plan }) => {
       {/* Call to Action */}
       <div>
         <Link
-          to={`/apply/${plan.id}`}
+          to={`/application-form`}
           className="inline-block bg-green-600 text-white px-5 py-2 rounded-md hover:bg-orange-500 transition-colors text-sm font-semibold"
         >
           Apply Now

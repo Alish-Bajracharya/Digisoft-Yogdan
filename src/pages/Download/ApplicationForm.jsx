@@ -68,8 +68,8 @@ const ApplicationForm = () => {
           <h2 className="text-3xl font-bold text-green-800 mb-4">
             Download Application Forms
           </h2>
-          <p className="text-gray-600 mb-6">
-            Please download and fill the required form before submitting it online.
+          <p className="text-red-900 mb-6">
+            NOTE: Please download and fill the required form before submitting it online.
           </p>
           <ul className="space-y-4">
             {downloadableForms.map((form, index) => (
