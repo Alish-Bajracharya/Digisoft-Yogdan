@@ -1,33 +1,35 @@
 import { useState } from "react";
-import { FaChevronDown, FaBars, FaTimes } from "react-icons/fa";
+import { FaChevronDown, FaBars, FaTimes, FaPhoneAlt, FaEnvelope, } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo1 from "../assets/images/logo1.png";
 import logo2 from "../assets/images/logo2.png";
-import callIcon from "../assets/icon/call.png";
-import mailIcon from "../assets/icon/mail.png";
+
 
 const menuItems = [
   {
     title: "Yogdan",
     submenu: [
-      { name: "Chairman's Message", path: "/chairman-message" },
+      { name: "About Us", path: "/about-us" },
       { name: "Advisors", path: "/advisors" },
       { name: "Board of Directors", path: "/directors" },
+      { name: "Chairman's Message", path: "/chairman-message" },
       { name: "Office Hours", path: "/office-hours" },
+     
     ],
   },
   {
     title: "Services",
     submenu: [
-      { name: "Saving Plans", path: "/saving-plans" },
       { name: "Loan Plans", path: "/loan-plans" },
+      { name: "Saving Plans", path: "/saving-plans" },
     ],
   },
   {
     title: "Downloads",
     submenu: [
-      { name: "Financial Reports", path: "/financial-reports" },
       { name: "Application Form", path: "/application-form" },
+      { name: "Financial Reports", path: "/financial-reports" },
+      
     ],
   },
   {
@@ -35,15 +37,15 @@ const menuItems = [
     submenu: [
       { name: "News", path: "/news" },
       { name: "Notices", path: "/notices" },
-      { name: "CSR Activities", path: "/csr-activities" },
       { name: "Photo Gallery", path: "/gallery" },
+      { name: "CSR Activities", path: "/csr-activities" },
     ],
   },
   {
     title: "Career",
     submenu: [
-      { name: "Positions Hiring", path: "/positions-hiring" },
       { name: "Apply for Job", path: "/apply-job" },
+      { name: "Positions Hiring", path: "/positions-hiring" },
     ],
   },
 ];
@@ -51,10 +53,10 @@ const menuItems = [
 
 
 const quickLinks = [
-  { title: "Interest Rate", href: "#" },
-  { title: "EMI Calculator", href: "#" },
+  { title: "Interest Rate", href: "/interest" },
+  { title: "EMI Calculator", href: "/Emi" },
   { title: "Contact", href: "/contact" },
-  { title: "Login", href: "Login" },
+  { title: "Login", href: "/login" },
   
 ];
 
@@ -80,16 +82,16 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
       {/* Top contact and quick links */}
-      <div className="hidden md:flex justify-between items-center text-sm px-6 py-2 bg-green-100 text-green-900 border-b border-green-300">
+      <div className="hidden md:flex justify-between items-center text-sm px-6 py-2 bg-green-100 text-green-900 border-b border-orange-300">
         <div className="flex items-center gap-6">
-          <div className="flex items-center gap-2">
-            <img src={callIcon} alt="Call" className="h-4" />
-            <span>+977-9860709940</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <img src={mailIcon} alt="Mail" className="h-4" />
-            <span>info@yogdan.coop.np</span>
-          </div>
+            <li className="flex items-start gap-2 h-4">
+              <FaPhoneAlt className="mt-1" />
+              <a href="callto:+977-9860709940" className="hover:text-[#f7941e]">+977-9860709940</a>
+            </li>
+            <li className="flex items-start gap-2 h-4">
+              <FaEnvelope className="mt-1" />
+              <a href="mailto:info@yogdan.coop.np" className="hover:text-[#f7941e]">info@yogdan.coop.np</a>
+            </li>
         </div>
         <ul className="flex items-center space-x-4">
           {quickLinks.map(({ title, href }) => (
@@ -112,7 +114,7 @@ const Navbar = () => {
                 {title}
                 <FaChevronDown size={12} className="mt-1" />
               </button>
-              <ul className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-md w-52 text-sm opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-40">
+              <ul className="absolute top-full -ml-6 mt-2  bg-white shadow-md rounded-md w-44 text-sm opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-200 z-40">
                 {submenu.map(({ name, path }) => (
                   <li key={name}>
                     <Link

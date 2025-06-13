@@ -1,6 +1,7 @@
-import SavingPlanCard from "../../components/PlanCard";
+import PlanCard from "../../components/PlanCard";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import Banner from "../../components/Banner";
 const SavingPlans = () => {
   const plans = [
     {
@@ -58,20 +59,18 @@ const SavingPlans = () => {
   return (
     <>
     <Navbar />
-        {/* Banner */}
-      <section className="bg-green-700 text-white py-16 mt-24 text-center">
-        <h1 className="text-4xl font-bold">Our Saving Plans</h1>
-        <p className="text-orange-300 mt-4 max-w-xl mx-auto">
-          Discover a range of personalized saving schemes designed to secure your financial future with trust and transparency.
-        </p>
-      </section >
-      <section>
-        <div className="grid mt-10 ml-10 mr-10 mb-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <Banner 
+      title="Our Saving Plans"
+      subtitle="Discover a range of personalized saving schemes designed to secure your financial future with trust and transparency."
+    />
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
           {plans.map((plan) => (
-            <SavingPlanCard key={plan.id} plan={plan} />
+          <PlanCard key={plan.id} plan={plan} />
           ))}
         </div>
-  
+      </div>
     </section>
     <Footer/>
     </>

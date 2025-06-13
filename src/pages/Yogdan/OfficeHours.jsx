@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
+import Banner from "../../components/Banner"
+
 
 const days = [
   { day: "Sunday", hours: "9:00 AM - 5:00 PM" },
@@ -25,12 +27,11 @@ const OfficeHours = () => {
       <Navbar />
 
       {/* Banner */}
-      <section className="bg-green-700 py-16 mt-24 text-white text-center">
-        <h1 className="text-4xl font-bold">Office Hours</h1>
-        <p className="mt-4 text-lg text-orange-300">
-          Visit us during working hours or contact us for more details.
-        </p>
-      </section>
+        <Banner
+          title="Office Hours"
+          subtitle="Visit us during working hours or contact us for more details."
+        />
+      
 
       {/* Office Hours Section */}
       <section className="py-16 bg-white">
@@ -52,7 +53,7 @@ const OfficeHours = () => {
                   <tr
                     key={day}
                     className={`${
-                      today === day ? "bg-orange-100" : "bg-white"
+                      today === day ? "bg-orange-300" : "bg-white"
                     } border-b hover:bg-green-50 transition`}
                   >
                     <td className="px-6 py-4 font-medium text-gray-700">{day}</td>

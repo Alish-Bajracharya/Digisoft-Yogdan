@@ -3,18 +3,18 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 // import chairmanImg from "../assets/advisor/chairman.jpg"; 
 import ImgB from "../../assets/member/boy.jpg"
+import Banner from "../../components/Banner.jsx"
+
 const ChairmanMessage = () => {
   return (
     <>
       <Navbar />
 
-      {/* Banner Section */}
-      <section className="bg-green-700 py-16 mt-24 text-center text-white">
-        <h1 className="text-4xl font-bold">Chairman's Message</h1>
-        <p className="text-orange-300 mt-4 text-lg">
-          Vision, Trust, and Commitment to Cooperative Excellence
-        </p>
-      </section>
+      <Banner
+        title="Chairman's Message"
+        subtitle="Vision, Trust, and Commitment to Cooperative Excellence"
+      />
+
 
       {/* Message Section */}
       <section className="py-16 bg-gray-50">

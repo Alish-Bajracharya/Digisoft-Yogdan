@@ -3,21 +3,17 @@ import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Banner from "../../components/Banner";
 
     
 const Contact = () => {
   return (
     <>
     <Navbar />
-      {/* Banner Section */}
-      <section className="bg-gray-100 py-10">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold">Contact Us</h1>
-          </div>
-        </div>
-      </section>
-
+    <Banner 
+    title="Contact Us"
+    subtitle="We're here for you!"
+    />
       {/* Contact Section */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
