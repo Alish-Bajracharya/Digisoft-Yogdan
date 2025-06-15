@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner from "../../components/Banner"
+import Sidebar from "../../components/Sidebar";
 
 
 const days = [
@@ -69,6 +70,7 @@ const OfficeHours = () => {
               Note: Office hours may vary on public holidays or during special cooperative events.
             </p>
           </div>
+         
         </div>
       </section>
 

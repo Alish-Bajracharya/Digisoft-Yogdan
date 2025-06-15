@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const NewsCard = ({ news }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow hover:shadow-lg transition-transform hover:-translate-y-1">
+    <div className="bg-white border border-gray-200 overflow-hidden shadow hover:shadow-lg transition-transform hover:-translate-y-1">
       <img
         src={news.image}
         alt={news.title}

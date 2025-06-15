@@ -2,6 +2,8 @@ import PlanCard from "../../components/PlanCard";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
 import Banner from "../../components/Banner";
+import Sidebar from "../../components/Sidebar";
+
 const SavingPlans = () => {
   const plans = [
     {
@@ -45,34 +47,46 @@ const SavingPlans = () => {
       ],
     },
     {
-        id: "senior",
-        name: "Senior Citizen Saving",
-        description: "Tailored for members aged 60+, this plan ensures worry-free golden years.",
-        features: [
+      id: "senior",
+      name: "Senior Citizen Saving",
+      description: "Tailored for members aged 60+, this plan ensures worry-free golden years.",
+      features: [
         "Bonus interest rates",
         "Free medical consultation tie-ups",
         "Quarterly dividend payouts",
-        ],
+      ],
     },
   ];
 
   return (
     <>
-    <Navbar />
-    <Banner 
-      title="Our Saving Plans"
-      subtitle="Discover a range of personalized saving schemes designed to secure your financial future with trust and transparency."
-    />
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center">
-          {plans.map((plan) => (
-          <PlanCard key={plan.id} plan={plan} />
-          ))}
+      <Navbar />
+      <Banner
+        title="Our Saving Plans"
+        subtitle="Discover a range of personalized saving schemes designed to secure your financial future with trust and transparency."
+      />
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 lg:px-8">
+          <div className="flex flex-col-reverse lg:flex-row gap-8">
+            {/* Plan Cards */}
+            <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 flex-1">
+              {plans.map((plan) => (
+                <PlanCard key={plan.id} plan={plan} />
+              ))}
+            </div>
+
+            {/* Sticky Right Sidebar */}
+            <aside className="lg:w-1/3 w-full">
+              <div className="sticky top-24"> 
+                <Sidebar />
+              </div>
+            </aside>
+          </div>
         </div>
-      </div>
-    </section>
-    <Footer/>
+      </section>
+
+      <Footer />
     </>
   );
 };

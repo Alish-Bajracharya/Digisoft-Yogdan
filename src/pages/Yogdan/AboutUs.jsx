@@ -1,27 +1,23 @@
 import React from "react";
 import aboutImg from "../../assets/images/logo1.png";
-import mdImage from "../../assets/member/10.jpg"; 
+import mdImage from "../../assets/member/gyanendra-maharjan.jpg"; 
 import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
+import Banner from "../../components/Banner";
 
 const AboutUs = () => {
   return (
     <>
     <Navbar />
+    <Banner 
+    title="About Yogdan Cooperative"
+    subtitle="Empowering communities through sustainable savings and financial inclusion."
+    />
     <section className="bg-white text-gray-800 mt-24">
-      {/* Hero Section */}
-      <div className="bg-gradient-to-r from-green-600 to-orange-400 text-white py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h1 className="text-4xl font-bold mb-4">About Yogdan Cooperative</h1>
-          <p className="text-lg max-w-2xl mx-auto">
-            Empowering communities through sustainable savings and financial inclusion.
-          </p>
-        </div>
-      </div>
-
+      
       {/* About Us Content */}
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-        <img src={aboutImg} alt="About Yogdan" className="rounded-xl shadow-md w-full h-auto object-cover" />
+        <img src={aboutImg} alt="About Yogdan" className=" shadow-md w-full h-auto object-cover" />
         <div>
           <h2 className="text-3xl font-semibold text-green-800 mb-4">Who We Are</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
@@ -36,13 +32,13 @@ const AboutUs = () => {
       {/* Mission & Vision */}
       <div className="bg-gray-100 py-16">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
-          <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-green-600">
+          <div className="bg-white p-8  shadow-md border-l-4 border-green-600">
             <h3 className="text-2xl font-bold text-green-700 mb-4">Our Mission</h3>
             <p className="text-gray-700">
               To foster economic empowerment and self-sufficiency in the community by offering secure and affordable financial services.
             </p>
           </div>
-          <div className="bg-white p-8 rounded-xl shadow-md border-l-4 border-orange-400">
+          <div className="bg-white p-8 shadow-md border-l-4 border-orange-400">
             <h3 className="text-2xl font-bold text-orange-600 mb-4">Our Vision</h3>
             <p className="text-gray-700">
               To be a trusted, innovative, and member-driven cooperative that promotes financial literacy and inclusion at every level.
@@ -55,15 +51,15 @@ const AboutUs = () => {
       <div className="max-w-6xl mx-auto px-6 py-16">
         <h2 className="text-3xl font-semibold text-center text-green-800 mb-10">Our Milestones</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+          <div className="bg-white p-6 shadow-lg border-t-4 border-green-500">
             <h4 className="text-xl font-bold text-gray-800 mb-2">5000+ Members</h4>
             <p className="text-gray-600 text-sm">Actively contributing to growth and development.</p>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-orange-500">
+          <div className="bg-white p-6 shadow-lg border-t-4 border-orange-500">
             <h4 className="text-xl font-bold text-gray-800 mb-2">NPR 10 Cr+ Savings</h4>
             <p className="text-gray-600 text-sm">Strong financial foundation backed by our members.</p>
           </div>
-          <div className="bg-white p-6 rounded-xl shadow-lg border-t-4 border-green-500">
+          <div className="bg-white p-6 shadow-lg border-t-4 border-green-500">
             <h4 className="text-xl font-bold text-gray-800 mb-2">Award-Winning Cooperative</h4>
             <p className="text-gray-600 text-sm">Recognized for transparency and service excellence.</p>
           </div>

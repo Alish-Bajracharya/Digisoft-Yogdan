@@ -25,7 +25,7 @@ const ApplyJob = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Info Section */}
-          <div className="bg-white p-6 rounded-xl shadow-md border">
+          <div className="bg-white p-6  shadow-md border">
             <h2 className="text-2xl font-semibold text-orange-600 mb-4">Join Our Team</h2>
             <p className="text-gray-700 mb-6">
               At our Cooperative, we are always seeking passionate and skilled individuals
@@ -42,7 +42,7 @@ const ApplyJob = () => {
           </div>
 
           {/* Form Section */}
-          <form className="bg-white p-6 rounded-xl shadow-md border space-y-5">
+          <form className="bg-white p-6 shadow-md border space-y-5">
             <h2 className="text-xl font-semibold text-green-700 mb-4">Application Form</h2>
 
             <div className="grid sm:grid-cols-2 gap-4">

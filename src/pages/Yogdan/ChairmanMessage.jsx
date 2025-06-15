@@ -1,8 +1,7 @@
 import React from "react";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-// import chairmanImg from "../assets/advisor/chairman.jpg"; 
-import ImgB from "../../assets/member/boy.jpg"
+import chairmanImg from "../../assets/member/gyanendra-maharjan.jpg"; 
 import Banner from "../../components/Banner.jsx"
 
 const ChairmanMessage = () => {
@@ -23,7 +22,7 @@ const ChairmanMessage = () => {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mb-10">
             <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-green-600 shadow-lg">
               <img
-                src={ImgB}
+                src={chairmanImg}
                 alt="Chairman"
                 className="w-full h-full object-cover"
               />

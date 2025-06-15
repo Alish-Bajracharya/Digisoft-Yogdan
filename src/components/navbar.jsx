@@ -11,8 +11,8 @@ const menuItems = [
     submenu: [
       { name: "About Us", path: "/about-us" },
       { name: "Advisors", path: "/advisors" },
-      { name: "Board of Directors", path: "/directors" },
       { name: "Chairman's Message", path: "/chairman-message" },
+      { name: "Meet Our Teams", path: "/directors" },
       { name: "Office Hours", path: "/office-hours" },
      
     ],
@@ -38,7 +38,7 @@ const menuItems = [
       { name: "News", path: "/news" },
       { name: "Notices", path: "/notices" },
       { name: "Photo Gallery", path: "/gallery" },
-      { name: "CSR Activities", path: "/csr-activities" },
+      { name: "Manka Oil", path: "/manka" },
     ],
   },
   {
@@ -169,7 +169,7 @@ const Navbar = () => {
                 </button>
 
                 {openSubMenuIndex === idx && (
-                  <ul className="mt-2 space-y-2 pl-4 text-base rounded-md py-2">
+                  <ul className="mt-2 space-y-2 pl-4 text-base  py-2">
                     {submenu.map(({ name, path }) => (
                       <li key={name}>
                         <Link

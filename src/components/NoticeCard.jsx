@@ -2,7 +2,7 @@ import { FileText, Info } from "lucide-react";
 
 const NoticeCard = ({ notice }) => {
   return (
-    <div className="relative bg-white/70 backdrop-blur-md rounded-xl border border-green-200 shadow-md hover:shadow-xl transition-all duration-300 p-6">
+    <div className="relative bg-white/70 backdrop-blur-md  border border-green-200 shadow-md hover:shadow-xl transition-all duration-300 p-6">
       <div className="flex justify-between items-center mb-3">
         <h3 className="text-xl font-semibold text-green-800">{notice.title}</h3>
         <span className="text-sm text-gray-500">{notice.date}</span>

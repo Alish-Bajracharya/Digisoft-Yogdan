@@ -9,7 +9,7 @@ import Directors from "./pages/Yogdan/Directors.jsx"
 import OfficeHours from './pages/Yogdan/OfficeHours.jsx';
 import ChairmanMessage from './pages/Yogdan/ChairmanMessage.jsx';
 import SavingPlans from './pages/Service/SavingPlans.jsx';
-import ApplyForm from './pages/Service/ApplyForm.jsx';
+// import ApplyForm from './pages/Service/ApplyForm.jsx';
 import LoanPlans from './pages/Service/LoanPlans.jsx';
 import News from "./pages/Information/yNews.jsx";
 import ReadMore from './pages/Information/Readmore.jsx';
@@ -40,7 +40,7 @@ function App() {
         <Route path="/chairman-message" element={<ChairmanMessage />} />
         <Route path="/saving-plans" element={<SavingPlans />} />
         <Route path="/loan-plans" element={<LoanPlans />} />
-        <Route path="/apply/:planId" element={<ApplyForm/>} />
+        {/* <Route path="/apply/:planId" element={<ApplyForm/>} /> */}
 
         <Route path="/news" element={<News />} />
         <Route path="/news/:id" element={<ReadMore />} />
