@@ -7,39 +7,75 @@ import Sidebar from "../../components/Sidebar";
 
 const jobs = [
   {
-    title: "Accountant",
-    type: "Full Time",
-    location: "Head Office",
-    description: `
-      As a cooperative accountant, you'll manage financial transactions, generate reports, and ensure compliance with government regulations. 
-      Responsibilities include preparing financial statements, maintaining ledgers, monitoring budgets, and conducting internal audits. 
-      You'll also coordinate with external auditors and support strategic financial planning for sustainable growth.
-    `,
-    slug: "accountant",
-  },
-  {
     title: "Loan Officer",
     type: "Full Time",
     location: "Branch Office",
-    description: `
-      The Loan Officer is responsible for evaluating, authorizing, and recommending loan applications. 
-      You'll assess borrowers’ creditworthiness, analyze financial documents, and explain loan types, terms, and payment plans. 
-      Regular follow-ups, maintaining client relationships, and helping members understand borrowing responsibilities are key parts of the role.
-    `,
     slug: "loan-officer",
+    brief: `We are looking for a Loan Officer to evaluate, authorize approval or deny loan applications for people or for businesses. You will act as a liaison between customers and our financial institution and help qualified applicants acquire loans in a timely manner.`,
+    responsibilities: [
+      "Evaluate credit worthiness by processing loan applications and documentation within specified limits",
+      "Interview applicants to determine financial eligibility",
+      "Set up debt payment plans and determine applicable ratios",
+      "Communicate with clients for information and documentation",
+      "Complete loan contracts and counsel clients on policies",
+      "Maintain and update account records and job knowledge",
+      "Develop referral networks and cross-sell services",
+      "Operate in compliance with lending laws and guidelines"
+    ],
+    requirements: [
+      "Proven experience as a Loan Officer",
+      "Familiarity with banking applications/software",
+      "Strong understanding of lending products and practices",
+      "Excellent communication and interpersonal skills",
+      "Customer-first mindset and sales competencies",
+      "Bachelor’s degree in finance, economics or related field"
+    ]
+  },
+  {
+    title: "Accountant",
+    type: "Full Time",
+    location: "Head Office",
+    slug: "accountant",
+    brief: `We're seeking a detail-oriented Accountant to manage financial records, ensure compliance with regulations, and support strategic financial decisions.`,
+    responsibilities: [
+      "Prepare financial statements and maintain ledgers",
+      "Ensure regulatory compliance and manage budgets",
+      "Conduct internal audits and financial analysis",
+      "Coordinate with external auditors and tax agencies",
+      "Contribute to long-term financial planning"
+    ],
+    requirements: [
+      "Bachelor's degree in Accounting or Finance",
+      "Proven experience in accounting roles",
+      "Proficiency in accounting software and MS Excel",
+      "Strong analytical and problem-solving skills",
+      "Excellent attention to detail and accuracy"
+    ]
   },
   {
     title: "Customer Support Representative",
     type: "Part Time",
     location: "Itahari Branch",
-    description: `
-      You’ll serve as the first point of contact for members, handling queries regarding savings, loans, and mobile banking. 
-      Responsibilities include resolving complaints, providing accurate information, assisting with form submissions, 
-      and escalating issues when necessary. Strong communication skills and a service-first mindset are essential.
-    `,
     slug: "customer-support",
-  },
+    brief: `We’re looking for a friendly and professional Customer Support Representative to assist our cooperative members and provide exceptional service.`,
+    responsibilities: [
+      "Answer queries related to savings, loans, and services",
+      "Resolve complaints and escalate issues when needed",
+      "Assist with form submissions and process updates",
+      "Maintain positive relationships with clients",
+      "Document customer interactions for improvement"
+    ],
+    requirements: [
+      "Strong communication and listening skills",
+      "Experience in a customer-facing role is a plus",
+      "Basic computer proficiency",
+      "Ability to multitask and handle pressure",
+      "Service-first attitude and willingness to help"
+    ]
+  }
 ];
+
+
 
 
 const Hiring = () => {
@@ -50,7 +86,7 @@ const Hiring = () => {
     title="Current Job Openings"
     subtitle="Explore exciting career opportunities and be a part of our growing cooperative family. We believe in talent, commitment, and continuous growth."
     />
-    <section className="min-h-screen bg-gray-50 py-16 px-4 md:px-12 -mb-24">
+    <section className="min-h-screen bg-gray-50 py-16 px-4 md:px-12 ">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
         
         {/* Main Content: Job Listings */}

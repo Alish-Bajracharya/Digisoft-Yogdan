@@ -150,12 +150,12 @@ const Footer = () => {
           <p>
             Website by{" "}
             <a
-              href="http://www.digisoft.com.np"
+              href="https://www.archiesoft.com.np/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#99ffcb]"
             >
-              DigiSoft Developers Pvt Ltd.
+              ArchieSoft Technology
             </a>
           </p>
         </div>

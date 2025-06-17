@@ -9,11 +9,11 @@ const AboutUs = () => {
   return (
     <>
     <Navbar />
-    <Banner 
+    <Banner
     title="About Yogdan Cooperative"
     subtitle="Empowering communities through sustainable savings and financial inclusion."
     />
-    <section className="bg-white text-gray-800 mt-24">
+    <section className="bg-white text-gray-800">
       
       {/* About Us Content */}
       <div className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">

@@ -44,8 +44,8 @@ const FinancialReport = () => {
         title="Financial Reports"
         subtitle="Our Fiscal Year Report"
       />
-      <section className="bg-gray-50 py-16 px-4 md:px-12">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
+      <section className="bg-gradient-to-br from-white to-green-50 py-16 px-6">
+        <div className="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10">
           {/* Left: Financial Reports */}
           <div className="lg:col-span-2">
             {financialReports.map((yearGroup, index) => (

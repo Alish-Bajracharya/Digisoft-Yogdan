@@ -13,6 +13,11 @@ const ApplyJob = () => {
     const file = e.target.files[0];
     if (file) setCvFileName(file.name);
   };
+
+    const handleSubmit = (e) => {
+    e.preventDefault();
+    alert("Application Submitted Successfully!");
+  };
   
   return (
    <>.
@@ -42,7 +47,7 @@ const ApplyJob = () => {
           </div>
 
           {/* Form Section */}
-          <form className="bg-white p-6 shadow-md border space-y-5">
+          <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md border space-y-5">
             <h2 className="text-xl font-semibold text-green-700 mb-4">Application Form</h2>
 
             <div className="grid sm:grid-cols-2 gap-4">
@@ -84,13 +89,13 @@ const ApplyJob = () => {
               placeholder="Why do you want to work with us?"
               className="input"
             ></textarea>
-
             <button
               type="submit"
               className="bg-green-700 hover:bg-orange-600 text-white px-6 py-2 rounded-md font-semibold transition"
             >
               Submit Application
             </button>
+           
           </form>
         </div>
       </div>

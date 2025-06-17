@@ -4,9 +4,9 @@ import accountOpenImg from "../../assets/offer/account-open.jpg";
 
 const OfferPanel = () => {
   const offers = [
-    { image: savingImg, alt: "Saving Offer", link: "#" },
-    { image: loanImg, alt: "Loan Offer", link: "#" },
-    { image: accountOpenImg, alt: "Account Opening", link: "#" },
+    { image: savingImg, alt: "Saving Offer", link: "/saving-plans" },
+    { image: loanImg, alt: "Loan Offer", link: "/loan-plans" },
+    { image: accountOpenImg, alt: "Account Opening", link: "/application-form" },
   ];
 
   return (
