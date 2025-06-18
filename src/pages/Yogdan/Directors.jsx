@@ -24,8 +24,8 @@ const boardOfDirectors = [
   { id: 1, image: Chairman, name: "Mr. Gyanendra Maharjan", position: "Chairman" },
   { id: 2, image: Img1, name: "Mr. Buddhi Ratna Dangol", position: "Secretary" },
   { id: 3, image: Img2, name: "Mr. Premnath Maharjan", position: "Treasurer" },
-  { id: 4, image: Img3, name: "Mr. Hera Bahadur Dangol", position: "Member" },
-  { id: 5, image: Img4, name: "Mr. Keshar Bahadur Dangol", position: "Member" },
+  { id: 4, image: Img3, name: "Mr. Hera Br. Dangol", position: "Member" },
+  { id: 5, image: Img4, name: "Mr. Keshar Br. Dangol", position: "Member" },
   { id: 6, image: Img5, name: "Mr. Surya Bati Maharjan", position: "Member" },
   { id: 7, image: Img7, name: "Ms. Renu Maharjan", position: "Member" },
 ];
@@ -45,8 +45,8 @@ const CreditandValuationCommittee = [
 
 const mankaOilMillCommittee = [
   { id: 14, image: Chairman, name: "Mr. Gyanendra Maharjan", position: "Coordinator" },
-  { id: 15, image: Img3, name: "Buddhi Ratna Dangol", position: "Member" },
-  { id: 16, image: Img2, name: "Premnath Maharjan", position: "Member" },
+  { id: 15, image: Img3, name: "Mr. Buddhi Ratna Dangol", position: "Member" },
+  { id: 16, image: Img2, name: "Mr. Premnath Maharjan", position: "Member" },
   { id: 17, image: Img13, name: "Mr. Ramesh kr. Maharjan", position: "Member" },
   { id: 18, image: Img14, name: "Mr. Kul-Ratna Maharjan", position: "Member" },
 ];

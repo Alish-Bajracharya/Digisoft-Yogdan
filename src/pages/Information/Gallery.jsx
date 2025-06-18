@@ -32,9 +32,9 @@ const Gallery = () => {
     {
       albumName: "Annual General Meeting",
       images: [
-        { id: 1, url: Img1, caption: "Opening Ceremony" },
-        { id: 2, url: Img2, caption: "Keynote Speech" },
-        { id: 3, url: Img3, caption: "Group Photo" },
+        { id: 1, url: Img2, caption: "Opening Ceremony" },
+        { id: 2, url: Img1, caption: "Keynote Speech" },
+        { id: 3, url: Img2, caption: "Group Photo" },
       ],
     },
     {

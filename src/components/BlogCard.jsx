@@ -1,28 +1,28 @@
 const BlogCard = ({ image, name, position }) => {
   return (
-    <div className="relative bg-white w-full max-w-xs h-[250px] border border-gray-200shadow-lg hover:shadow-2xl transition duration-500 ease-in-out transform hover:-translate-y-2 group p-5 flex flex-col items-center overflow-hidden animate-fade-in-up">
+    <div className="group relative bg-white w-full max-w-sm h-[400px] border border-gray-200  overflow-hidden shadow-md hover:shadow-2xl transition-transform duration-500 hover:-translate-y-2 hover:scale-[1.02] flex flex-col">
       
-      {/* Decorative ring on hover */}
-      <div className="w-32 h-32 rounded-full mb-4 relative">
-        <div className="absolute inset-0 rounded-full group-hover:border-gradient-to-tr group-hover:from-green-600 group-hover:to-lime-400 transition-all duration-500"></div>
+      {/* Image */}
+      <div className="h-96 w-full overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover rounded-full transition-transform duration-500 transform group-hover:scale-110 border-4 border-orange-400 z-10 relative"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
       </div>
 
-      {/* Name */}
-      <h3 className="text-lg font-bold text-green-800 group-hover:text-green-900 transition-colors duration-300">
-        {name}
-      </h3>
+      {/* Content */}
+      <div className="p-5 mt-1 flex flex-col items-center text-center justify-between flex-1 relative z-10">
+        {/* Name with underline */}
+        <h3 className="text-xl font-semibold text-emerald-700 relative after:content-[''] after:block after:w-12 after:h-[2px] after:bg-emerald-500 after:mx-auto after:mt-1 group-hover:after:w-16 after:transition-all">
+          {name}
+        </h3>
 
-      {/* Position */}
-      <p className="text-sm text-gray-500 mt-3 px-2 text-center italic">
-        {position}
-      </p>
+        {/* Position */}
+        <p className="text-sm text-gray-600 mt-3 italic leading-relaxed">{position}</p>
+      </div>
 
-      {/* Decorative background shape */}
+      {/* Decorative background blur */}
       <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-green-100 rounded-full blur-2xl opacity-30 z-0"></div>
     </div>
   );

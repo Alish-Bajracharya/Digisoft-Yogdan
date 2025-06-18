@@ -24,6 +24,7 @@ import Apply from "./pages/Career/Apply.jsx";
 import AboutUs from './pages/Yogdan/AboutUs.jsx';
 import Emi from './pages/QuickLink/Emi.jsx';
 import Interest from './pages/QuickLink/Interest.jsx';
+import MankaOil from './pages/Information/MankaOil.jsx';
 
 
 
@@ -55,6 +56,8 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/emi" element={<Emi />} />
         <Route path="/interest" element={<Interest />} />
+        <Route path="/manka-oil" element={<MankaOil />} />
+
 
         
 

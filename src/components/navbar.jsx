@@ -285,7 +285,7 @@ const menuItems = [
       { label: "Notices", href: "/notices" },
       { label: "CSR Activities", href: "/csr-activities" },
       { label: "Photo Gallery", href: "/gallery" },
-      { label: "Manka Oil", href: "/manka" },
+      { label: "Manka Oil", href: "/manka-oil" },
     ],
   },
   {

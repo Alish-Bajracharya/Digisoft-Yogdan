@@ -8,13 +8,14 @@ const MemberSection = ({ title, members }) => {
   const others = members.slice(3);
 
   return (
-    <section className="bg-gray-50 py-16 px-4">
-      <div className="max-w-7xl mx-auto space-y-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-emerald-600 underline decoration-green-700 decoration-4">
+    <section className="bg-emerald-50 py-20 px-6">
+      <div className="max-w-7xl mx-auto space-y-16">
+        {/* Section Title */}
+        <h2 className="text-3xl md:text-4xl font-extrabold text-center text-emerald-600 underline decoration-emerald-500 decoration-4 underline-offset-8">
           {title}
         </h2>
 
-        {/* Top Card */}
+        {/* Top 1 */}
         {topOne.length > 0 && (
           <div className="flex justify-center">
             {topOne.map((member) => (
@@ -23,27 +24,27 @@ const MemberSection = ({ title, members }) => {
           </div>
         )}
 
-        {/* Manka Special Layout */}
+        {/* Manka Layout */}
         {isManka ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 justify-items-center">
             {members.slice(1).map((member) => (
               <BlogCard key={member.id} {...member} />
             ))}
           </div>
         ) : (
           <>
-            {/* 2-Column Layout */}
+            {/* 2 cards layout */}
             {nextTwo.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 ml-80  gap-10 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 ml-40 gap-12 justify-center">
                 {nextTwo.map((member) => (
                   <BlogCard key={member.id} {...member} />
                 ))}
               </div>
             )}
 
-            {/* 4-Column Layout */}
+            {/* 4-column layout */}
             {others.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 justify-items-center">
                 {others.map((member) => (
                   <BlogCard key={member.id} {...member} />
                 ))}
